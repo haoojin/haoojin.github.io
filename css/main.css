@@ -422,7 +422,7 @@ pre,
 }
 pre,
 code {
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: 'Monaco', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
 code {
   overflow-wrap: break-word;
@@ -1642,6 +1642,13 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
+}
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
 }
 .site-author-name {
   color: #222;
@@ -1669,7 +1676,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e96cc9;
+  background: #3d598c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
